@@ -1,0 +1,15 @@
+// Units File
+"DOTAUnits"
+{
+        "Version"       "1"
+        //=================================================================================    
+        // Creature: building
+        //=================================================================================
+    "npc_dota_building_homebase"    
+    {
+        "Model" "models/buildings/building_plain_reference.vmdl"
+        "BaseClass" "npc_dota_creature"
+        "ModelScale" "2.5"
+        "BoundsHullName" "DOTA_HULL_SIZE_HERO"
+    }
+}
