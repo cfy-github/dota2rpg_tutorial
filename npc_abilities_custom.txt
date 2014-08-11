@@ -1,0 +1,28 @@
+"DOTAAbilities"
+{
+        "Version"               "1"
+        //=================================================================================================================
+        // Colonist: make building
+        //=================================================================================================================
+        "colonist_make_building"
+        {
+                "BaseClass" "ability_datadriven"
+                "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_NO_TARGET  |   DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+                "AbilityManaCost" "0"
+ 
+                "AbilityTextureName"            "axe_battle_hunger"
+                "AbilityCastRange" "0"
+                "AbilityCastPoint" "0"
+                "AbilityChannelTime" "1.5"
+ 
+                "OnChannelSucceeded"
+                {
+                        "SpawnUnit"
+                        {
+                                "UnitName" "npc_dota_building_homebase"
+                                "UnitCount" "1"
+                                "SpawnRadius" "350"
+                        }
+                }
+        }
+}
